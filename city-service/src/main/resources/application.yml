@@ -14,3 +14,15 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
 weather-service:
   url: http://10.10.5.115:8082/weather/api
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true

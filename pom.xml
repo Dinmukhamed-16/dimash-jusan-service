@@ -6,13 +6,18 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>dinmukhamed</groupId>
 	<artifactId>weather</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>weather</name>
-	<description>Demo project for Spring Boot</description>
+	<modules>
+		<module>city-service</module>
+		<module>weather-service</module>
+	</modules>
+	<description>Test project</description>
 	<url/>
 	<licenses>
 		<license/>

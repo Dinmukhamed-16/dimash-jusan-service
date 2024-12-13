@@ -17,6 +17,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+import static com.example.cityservice.service.specification.CitySpecification.byEnabled;
 import static com.example.cityservice.util.UtilUrl.ErrorMessages.FORBIDDEN_ERROR;
 import static com.example.cityservice.util.UtilUrl.ErrorMessages.SERVICE_UNAVAILABLE_ERROR;
 
@@ -135,6 +136,6 @@ public class CityService {
     }
 
     private Specification<City> getSpecificationAllEnabled() {
-        return null;
+        return byEnabled(true);
     }
 }
