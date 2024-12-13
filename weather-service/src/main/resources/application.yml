@@ -1,0 +1,13 @@
+server:
+  port: 8082
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+api:
+  weatherapi:
+    key: "5e1b03ca70c245748ce114846241012"
+    url: "http://api.weatherapi.com/v1"
